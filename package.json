@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next-translate && next dev",
-    "build": "next-translate && next build",
+    "dev": "next dev",
+    "build": "next build",
     "start": "next start",
     "lint": "eslint '*/**/*.{js,ts,tsx}' --quiet --fix"
   },
   "dependencies": {
     "@types/spotify-web-playback-sdk": "^0.1.7",
     "next": "^10.0.2",
-    "next-translate": "^0.19.5",
+    "next-i18next": "^7.0.1",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "rxjs": "^6.6.3"
@@ -22,15 +22,15 @@
     "@types/react": "^16.9.56",
     "@typescript-eslint/eslint-plugin": "^4.7.0",
     "@typescript-eslint/parser": "^4.7.0",
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^10.1.0",
     "eslint": "^7.13.0",
     "eslint-config-prettier": "^6.15.0",
     "eslint-plugin-prettier": "^3.1.4",
     "eslint-plugin-react": "^7.21.5",
-    "postcss": "^8.1.9",
+    "postcss": "^8.2.1",
     "postcss-preset-env": "^6.7.0",
     "prettier": "^2.1.2",
-    "tailwindcss": "^2.0.1",
+    "tailwindcss": "^2.0.2",
     "typescript": "^4.0.5"
   }
 }

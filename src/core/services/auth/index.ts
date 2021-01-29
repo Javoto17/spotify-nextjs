@@ -22,20 +22,19 @@ export const AuthService = {
             console.log(error);
         }
     },
-    getToken: (data: getTokenData) => {
+    getToken: (data: getTokenData): any => {
         const body = Object.keys(data)
             .map((key) => {
                 return encodeURIComponent(key) + '=' + encodeURIComponent(`${data[key]}`);
             })
             .join('&');
 
-        console.log(body);
         return HTTP.request(
             { url: 'api/token', type: 'POST', body },
             {
                 'Content-Type': 'application/x-www-form-urlencoded',
                 Authorization: `Basic ${btoa(`${NEXT_PUBLIC_CLIENT_ID}:${NEXT_PUBLIC_CLIENT_SECRET}`)}`,
             },
-        );
+        ).toPromise();
     },
 };

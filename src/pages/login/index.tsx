@@ -1,6 +1,6 @@
-import { AuthService } from '../services/auth';
+import { AuthService } from '../../core/services/auth';
 
-export default function Home() {
+export default function LogIn() {
     const goToLogin = () => {
         AuthService.requestAccess();
     };
