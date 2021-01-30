@@ -2,7 +2,7 @@ import type { AppProps } from 'next/app';
 import { AuthContextConsumer, AuthContextProvider } from '../core/hooks/useAuth/useAuth';
 import { SpotifyProvider } from '../core/hooks/useSpotifySDK/useSpotifySDK';
 
-import '../core/styles/globals.css';
+import '../core/styles/globals.scss';
 
 export default function MyApp({ Component, pageProps }: AppProps) {
     return (
